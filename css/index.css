@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+
+.menu{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: rgb(107, 107, 107);
+    height: 100vh;
+    width: 250px;
+    border: solid;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-width: 0px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    display: none;
+    z-index: 999;
+}
+
+.menu-container{
+    padding-top: 20px;
+}
+
+.close{
+    display: block;
+    padding-inline: 20px;
+    padding-bottom: 0px;
+    color: white;
+    width: 0px;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+.menu-list{
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.menu-list span{
+    margin-top: -4px;
+    margin-right: 20px;
+    color: white;
+}
+
+.menu-list li{
+    padding: 10px;
+    font-family: "Inter";
+    font-size: 18px;
+    display: flex;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.menu-list a{
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+#button-menu{
+    background-color: rgb(51, 51, 51);
+}
+
+#button-menu a{
+    color: white;
+}
+
+#button-menu span{
+    color: rgb(0, 183, 255);
+}
+
+.menu-mobile{
+    width: 65px;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background-color: white;
+    z-index: 9999;
+    padding-inline: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.menu-mobile:hover{
+    cursor: pointer;
+}
+
+#toggler{
+    width: 100%;
+}
+
+.event{
+    background-color: rgb(168, 168, 168);
+    border: solid;
+    margin-inline: 30px;
+    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    border-radius: 20px;
+    border-width: 0px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Inter'; /* Nom que vous donnez à la police */
+    src: url("../assets/fonts/Inter/static/Inter_18pt-Medium.ttf") format('truetype'); /* Fichier TTF */
+    font-weight: normal; /* Définit le poids par défaut */
+    font-style: normal;  /* Définit le style par défaut */
+}

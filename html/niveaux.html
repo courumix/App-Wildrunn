@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Passage à niveaux</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/niveaux.css" />
+</head>
+
+<body>
+    <div class="menu-mobile">
+        <img src="../assets/images/logo-wildrunn.png" onclick="toggler()" id="toggler">
+    </div>
+    <div class="menu">
+        <div class="menu-container">
+            <div class="close">
+            <span class="material-symbols-outlined" onclick="toggler()">close</span>
+            </div>
+            <ul class="menu-list">
+                <li id="button-menu">
+                    <a href="index.html">
+                        <span class="material-symbols-outlined" class="menu-icon">home</span>
+                    </a>
+                    <a href="index.html">Menu</a>
+                </li>
+                <li id="button-agenda">
+                    <a href="agenda.html">
+                        <span class="material-symbols-outlined" class="menu-icon">calendar_month</span>
+                    </a>
+                    <a href="agenda.html">Agenda</a>
+                </li>
+                <li id="button-niveaux">
+                    <a href="niveaux.html">
+                        <span class="material-symbols-outlined" class="menu-icon">edit_square</span>
+                    </a>
+                    <a href="niveaux.html">Passage à niveaux</a>
+                </li>
+                <li id="button-contacts">
+                    <a href="contacts.html">
+                        <span class="material-symbols-outlined" class="menu-icon">contacts_product</span>
+                    </a>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>    
+
+    <script>
+        function toggler(){
+            const icon = document.querySelector("#toggler");
+            const menu = document.querySelector(".menu");
+            const mobile = document.querySelector(".menu-mobile");
+            if(icon.innerHTML == "menu"){
+                icon.innerHTML = "close";
+                menu.style.display = "block";
+                mobile.style.display = "none";
+            }
+            else{
+                icon.innerHTML = "menu";
+                menu.style.display = "none";
+                mobile.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
